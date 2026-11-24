@@ -19,4 +19,5 @@ newline, guarded to 1–240 characters.
 The first entry was a generic description-to-app pitch and ranked below the
 top-500 cut. The new angle speaks to one person about one specific artifact:
 a napkin sketch hidden in a wallet, plus urgency (act before the feeling
-fades). The entry is 147 characters and scored 24/25 against the criteria.
+fades). The entry is 149 characters (sha256
+b1a2f9c60b6f7460925d84a41b6ac90ffad0b8d5f9a3bef2d79330a29d08b7f9) and scored 24/25 against the criteria.
