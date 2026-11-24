@@ -4,7 +4,7 @@ const OUTPUT_DIR = process.env.OUTPUT_DIR ?? "/output";
 const ENTRY_FILE = "entry.txt";
 
 const PITCH_LINE =
-  "Take that napkin sketch you keep hiding in your wallet and let the agent on make.fun turn it into something real before you lose the feeling again.";
+  "Take that napkin sketch you keep hiding in your wallet and let an AI agent on make.fun turn it into something real before you lose the feeling again.";
 
 function validateEntry(text: string): string {
   if (text.length < 1 || text.length > 240) {
