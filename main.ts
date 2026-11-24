@@ -29,4 +29,15 @@ function writeEntry(text: string): void {
   writeFileSync(`${outputDir}/${ENTRY_FILE}`, entry);
 }
 
-writeEntry(PITCH_LINE);
+function main(): void {
+  try {
+    validateEntry(PITCH_LINE);
+    writeEntry(PITCH_LINE);
+  } catch (err) {
+    const message = err instanceof Error ? err.message : String(err);
+    console.error(`error: could not write entry: ${message}`);
+    process.exit(1);
+  }
+}
+
+main();
