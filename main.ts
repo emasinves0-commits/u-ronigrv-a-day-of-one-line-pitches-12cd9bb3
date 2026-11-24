@@ -8,12 +8,12 @@ function resolveOutputDir(): string {
 }
 
 /**
- * Revision v2 angle: one specific human moment (a napkin sketch hidden in a
- * wallet) plus urgency (act before the feeling fades), instead of a generic
- * describe-it-and-get-an-app pitch.
+ * Revision v2 angle: the friend who keeps telling an app idea at dinner is
+ * already writing the spec; one year of regret plus a low-commitment trial
+ * ("build it once and see what happens"), instead of a generic pitch.
  */
 const PITCH_LINE =
-  "Take that napkin sketch you keep hiding in your wallet and let an AI agent on make.fun turn it into something real before you lose the feeling again.";
+  "Every time you tell that app idea at dinner, you're writing the spec — a year from now you'll still be describing it unless you let the agent build it once and see what happens.";
 
 function validateEntry(text: string): string {
   if (text.length < 1 || text.length > ENTRY_MAX) {
