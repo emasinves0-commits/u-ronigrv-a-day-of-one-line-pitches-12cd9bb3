@@ -1,11 +1,17 @@
-// A Day of One-Line Pitches — make.fun bounty entry.
-// The program writes the entry line, one sentence of at most 240 characters,
-// to $MAKEFUN_OUTPUT_DIR/entry.txt (default /output).
 import { mkdirSync, writeFileSync } from "node:fs";
 
-const ENTRY_LINE =
-  "Tell an AI agent the app idea you've been carrying around, in plain words, and it builds you a working first version on make.fun in minutes, free to try, and you only keep going if you love what you see.";
+const OUTPUT_DIR = "/output";
+const ENTRY_FILE = "entry.txt";
 
-const outputDir = process.env.MAKEFUN_OUTPUT_DIR ?? "/output";
-mkdirSync(outputDir, { recursive: true });
-writeFileSync(`${outputDir}/entry.txt`, ENTRY_LINE, "utf8");
+const LINE =
+  "If you can describe your app idea out loud, an AI agent on make.fun can build the first version of it for you — you talk, it types, and tonight you'll be tapping something real instead of just talking about it.";
+
+function checkedLine(text: string): string {
+  if (text.length < 1 || text.length > 240) {
+    throw new Error(`entry must be 1-240 characters, got ${text.length}`);
+  }
+  return text;
+}
+
+mkdirSync(OUTPUT_DIR, { recursive: true });
+writeFileSync(`${OUTPUT_DIR}/${ENTRY_FILE}`, checkedLine(LINE));
