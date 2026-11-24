@@ -17,7 +17,12 @@ newline, guarded to 1–240 characters.
 ## Revision v2
 
 The first entry was a generic description-to-app pitch and ranked below the
-top-500 cut. The new angle speaks to one person about one specific artifact:
-a napkin sketch hidden in a wallet, plus urgency (act before the feeling
-fades). The entry is 149 characters (sha256
-b1a2f9c60b6f7460925d84a41b6ac90ffad0b8d5f9a3bef2d79330a29d08b7f9) and scored 24/25 against the criteria.
+top-500 cut. A head-to-head criteria comparison of the finalists picked the
+"dinner-spec" entry (177 characters, 179 bytes, sha256 cf4dba239c4c) over the
+napkin-sketch entry: dinner-spec scored 24/25, napkin 22/25.
+
+Why dinner-spec wins: it closes napkin's criterion-1 weakness (napkin assumes
+the friend has a sketch; dinner-spec assumes only that they talk about the
+idea). It wins on persuasion (one-year regret plus "build it once and see what
+happens" as an explicit low-commitment trial) and on truth (it promises
+nothing). Napkin wins only on clarity, since "spec" is borderline jargon.
